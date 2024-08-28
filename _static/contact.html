@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body class="dark">
+    <header class="header bg--dark clr--light">
+      <div class="container">
+        <div class="wrapper flex justify--between align--center">
+          <div class="header__menu flex align--end">
+            <div class="branding mr--2">
+              <a href="#">BLOG</a>
+            </div>
+            <nav class="header__nav">
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="header__switch">
+            <button id="themeToggle"><i class="fas fa-sun"></i></button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="page bg--dark clr--light">
+      <div class="container">
+        <div class="page__body py--10">
+          <h2 class="page__header">
+            Let's Talk About <br />
+            Something Nice
+          </h2>
+          <div class="contact__wrapper">
+            <div class="contact__info">
+              <p>
+                356 Yonge Street, Toronto,<br />
+                Ontario M5B 1S5 Canada
+              </p>
+              <p><a href="#">info@theblog.com</a></p>
+              <p>0921 902 0192</p>
+            </div>
+
+            <div class="contact__form">
+              <form action="">
+                <input type="text" placeholder="Name" />
+                <input type="text" placeholder="Email" />
+                <input type="text" placeholder="Subject" />
+                <textarea placeholder="Message"></textarea>
+                <button>Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer bg--dark clr--light py--5">
+      <div class="footer__wrapper text--center">
+        <a href="#" class="footer__logo">BLOG</a>
+        <nav class="footer__nav">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">BLog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <ul class="footer__socialmedia flex justify--between">
+          <li class="mr--2">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </li>
+          <li class="mr--2">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li class="mr--2">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li class="mr--2">
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </li>
+        </ul>
+
+        <p>Copyright 2020, All Right Reserved</p>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

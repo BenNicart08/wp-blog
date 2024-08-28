@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body class="dark">
+    <header class="header bg--dark clr--light">
+      <div class="container">
+        <div class="wrapper flex justify--between align--center">
+          <div class="header__menu flex align--end">
+            <div class="branding mr--2">
+              <a href="#">BLOG</a>
+            </div>
+            <nav class="header__nav">
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="header__switch">
+            <button id="themeToggle"><i class="fas fa-sun"></i></button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="banner bg--dark clr--light">
+      <div class="container">
+        <div class="banner__wrapper">
+          <h1 class="banner__title">The Blog</h1>
+          <div class="banner__article">
+            <div class="banner__grid">
+              <div class="banner__primary">
+                <div class="card__banner__lg">
+                  <img src="./images/banner_primary.jpg" alt="" />
+                  <ul class="card__meta flex">
+                    <li class="article__date">May 20, 2002</li>
+                  </ul>
+                  <p class="article__excerpt">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Sapiente, ratione quia? Velit labore rerum doloremque
+                    eligendi? Quidem quas doloremque perspiciatis itaque facilis
+                    delectus illum libero!
+                  </p>
+                  <a href="# " class="article__more">Read More</a>
+                </div>
+              </div>
+              <div class="banner__secondary">
+                <div class="card__banner__sm">
+                  <div class="flex">
+                    <img src="./images/banner_sub1.jpg" alt="" />
+                    <div class="wrapper">
+                      <ul class="card__meta flex">
+                        <li class="article__date">May 20, 2002</li>
+                      </ul>
+                      <h3>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                      </h3>
+                      <a href="#">Read More</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card__banner__sm">
+                  <div class="flex">
+                    <img src="./images/banner_sub2.jpg" alt="" />
+                    <div class="wrapper">
+                      <ul class="card__meta flex">
+                        <li class="article__date">May 20, 2002</li>
+                      </ul>
+                      <h3>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                      </h3>
+                      <a href="#">Read More</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card__banner__sm">
+                  <div class="flex">
+                    <img src="./images/banner_sub3.jpg" alt="" />
+                    <div class="wrapper">
+                      <ul class="card__meta flex">
+                        <li class="article__date">May 20, 2002</li>
+                      </ul>
+                      <h3>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                      </h3>
+                      <a href="#">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="latest py--10">
+      <div class="container">
+        <h2>Latest Story</h2>
+        <div class="latest__grid">
+          <div class="card__single__col">
+            <figure class="img__wrapper">
+              <img src="./images/latest_1.jpg" alt="" />
+            </figure>
+            <ul class="card__meta flex">
+              <li class="article__date">May 20, 2002</li>
+              <li class="article__category">Sport</li>
+            </ul>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
+              recusandae consequuntur iste nostrum, quam in nihil odio enim
+              totam reprehenderit corporis aliquam commodi sapiente. Saepe.
+            </p>
+            <a href="#">Read More</a>
+          </div>
+
+          <div class="card__single__col">
+            <figure class="img__wrapper">
+              <img src="./images/latest_2.jpg" alt="" />
+            </figure>
+            <ul class="card__meta flex">
+              <li class="article__date">May 20, 2002</li>
+              <li class="article__category">Science</li>
+            </ul>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
+              recusandae consequuntur iste nostrum, quam in nihil odio enim
+              totam reprehenderit corporis aliquam commodi sapiente. Saepe.
+            </p>
+            <a href="#">Read More</a>
+          </div>
+
+          <div class="card__single__col">
+            <figure class="img__wrapper">
+              <img src="./images/latest_3.jpg" alt="" />
+            </figure>
+            <ul class="card__meta flex">
+              <li class="article__date">May 20, 2002</li>
+              <li class="article__category">Music</li>
+            </ul>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
+              recusandae consequuntur iste nostrum, quam in nihil odio enim
+              totam reprehenderit corporis aliquam commodi sapiente. Saepe.
+            </p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature bg--dark clr--light py--5 text--center">
+      <div class="container">
+        <h2>Feature News</h2>
+        <div class="feature__wrapper">
+          <h3>Malesuada fames ac ante ipsum primis in faucibus</h3>
+          <p>
+            Cras mattis auctor magna id interdum. Interdum et malesuada fames ac
+            ante ipsum primis in faucibus. Sed non mauris leo. Phasellus sed
+            ipsum luctus, suscipit diam eu, eleifend ex.
+          </p>
+          <a href="#">Read the full Story</a>
+        </div>
+
+        <div class="feature__img">
+          <img src="./images/feature.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="other py--10">
+      <div class="container">
+        <div class="other__grid">
+          <div class="other__main">
+            <div class="card__two__col">
+              <figure>
+                <img src="./images/other_1.jpg" alt="" />
+              </figure>
+
+              <div class="other__content">
+                <ul class="card__meta flex">
+                  <li class="article__date">May 20, 2002</li>
+                </ul>
+                <h3>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit Sunt
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequuntur illo autem velit rem dolorum enim distinctio odio
+                  culpa reiciendis impedit excepturi similique, quibusdam maxime
+                  ipsam atque ratione! Laboriosam, laborum nobis.
+                </p>
+                <a href="#">Read more</a>
+              </div>
+            </div>
+
+            <div class="card__two__col">
+              <figure>
+                <img src="./images/other_2.jpg" alt="" />
+              </figure>
+
+              <div class="other__content">
+                <ul class="card__meta flex">
+                  <li class="article__date">May 20, 2002</li>
+                </ul>
+                <h3>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit Sunt
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequuntur illo autem velit rem dolorum enim distinctio odio
+                  culpa reiciendis impedit excepturi similique, quibusdam maxime
+                  ipsam atque ratione! Laboriosam, laborum nobis.
+                </p>
+                <a href="#">Read more</a>
+              </div>
+            </div>
+
+            <div class="card__two__col">
+              <figure>
+                <img src="./images/other_3.jpg" alt="" />
+              </figure>
+
+              <div class="other__content">
+                <ul class="card__meta flex">
+                  <li class="article__date">May 20, 2002</li>
+                </ul>
+                <h3>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit Sunt
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequuntur illo autem velit rem dolorum enim distinctio odio
+                  culpa reiciendis impedit excepturi similique, quibusdam maxime
+                  ipsam atque ratione! Laboriosam, laborum nobis.
+                </p>
+                <a href="#">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="other__side">
+            <div class="card__sidebar">
+              <ul class="card__meta flex">
+                <li class="article__date">May 20, 2002</li>
+              </ul>
+              <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit Sunt
+              </h3>
+              <a href="#">Read more</a>
+            </div>
+
+            <div class="card__sidebar">
+              <ul class="card__meta flex">
+                <li class="article__date">May 20, 2002</li>
+              </ul>
+              <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit Sunt
+              </h3>
+              <a href="#">Read more</a>
+            </div>
+
+            <div class="card__sidebar">
+              <ul class="card__meta flex">
+                <li class="article__date">May 20, 2002</li>
+              </ul>
+              <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit Sunt
+              </h3>
+              <a href="#">Read more</a>
+            </div>
+
+            <div class="card__sidebar">
+              <ul class="card__meta flex">
+                <li class="article__date">May 20, 2002</li>
+              </ul>
+              <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit Sunt
+              </h3>
+              <a href="#">Read more</a>
+            </div>
+
+            <div class="card__sidebar">
+              <ul class="card__meta flex">
+                <li class="article__date">May 20, 2002</li>
+              </ul>
+              <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit Sunt
+              </h3>
+              <a href="#">Read more</a>
+            </div>
+
+            <div class="card__sidebar">
+              <ul class="card__meta flex">
+                <li class="article__date">May 20, 2002</li>
+              </ul>
+              <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit Sunt
+              </h3>
+              <a href="#">Read more</a>
+            </div>
+
+            <div class="card__sidebar">
+              <ul class="card__meta flex">
+                <li class="article__date">May 20, 2002</li>
+              </ul>
+              <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit Sunt
+              </h3>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer bg--dark clr--light py--5">
+      <div class="footer__wrapper text--center">
+        <a href="#" class="footer__logo">BLOG</a>
+        <nav class="footer__nav">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">BLog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <ul class="footer__socialmedia flex justify--between">
+          <li class="mr--2">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </li>
+          <li class="mr--2">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li class="mr--2">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li class="mr--2">
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </li>
+        </ul>
+
+        <p>Copyright 2020, All Right Reserved</p>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
