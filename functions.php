@@ -5,3 +5,10 @@ function blog_assets() {
 }
 
 add_action('wp_enqueue_scripts', 'blog_assets');
+
+function blog_theme_support() {
+    add_theme_support( 'post-thumbnails' );
+    add_theme_support( 'custom-logo' ); 
+
+}
+add_action('after_setup_theme', 'blog_theme_support');
