@@ -1,13 +1,27 @@
+<?php 
+
+/**
+ * Template Name: Blog Single
+ *  
+*/
+
+
+
+?>
+
+
+
 <?php get_header()?>
 
+
 <section class="single__banner bg--dark clr--light py--10">
-    <?php $primary = new WP_Query(array(
+    <?php new WP_Query(array(
                   'post_type' => 'post',
                   'post_per_page' => 1, 
                   'meta_key' => "Banner",
                   'meta_value' => "Primary",
                   ))?>
-      <?php if($primary->have_posts()) : while ($primary->have_posts()) : $primary->the_post(); ?>
+      <?php if(have_posts()) : while (have_posts()) : the_post(); ?>
       <div class="container">
         <div class="single__banner__header flex justify--between align--end">
           <h1>
@@ -30,19 +44,19 @@
                         echo "No More Blog";
                     endif; 
                     wp_reset_postdata();
-                ?> 
+    ?> 
 </section>
 
 <main class="single__article py--10 bg--dark clr--light">
       <div class="container">
-        <?php $single = new WP_Query(array(
+        <?php new WP_Query(array(
                   'post_type' => 'post',
                   'post_per_page' => 3, 
                   'meta_key' => "Article",
                   'meta_value' => "Single",
                   ))?>
                 
-                <?php if($single->have_posts()) : while ($single->have_posts()) : $single->the_post(); ?>
+                <?php if(have_posts()) : while (have_posts()) : the_post(); ?>
 
         <div class="single__article__wrapper">
           <div class="single__article__info bg--light clr--dark">
@@ -84,8 +98,8 @@
 
             <div class="single__navigation mt--10">
               <ul class="flex justify--between">
-                <li><a href="#">Previous Story</a></li>
-                <li><a href="#">Next Story</a></li>
+                <li><?php echo get_previous_post_link('%link','Previous')?></li>
+                <li><?php echo get_next_post_link('%link','Next')?></li>
               </ul>
             </div>
           </div>
@@ -108,8 +122,8 @@
            <?php $secondary = new WP_Query(array(
                   'post_type' => 'post',
                   'posts_per_page' => 3, 
-                  'meta_key' => "Story",
-                  'meta_value' => "Secondary",
+                  'orderby' => 'rand',
+                  'post__not_in' => array(get_the_ID())
                   ))?>
                 
                 <?php if($secondary->have_posts()) : while ($secondary->have_posts()) : $secondary->the_post(); ?>
@@ -134,14 +148,14 @@
 
           </div>
           <div class="single__other__main">
-            <?php $primary = new WP_Query(array(
+            <?php  new WP_Query(array(
                   'post_type' => 'post',
-                  'post_per_page' => 7, 
-                  'meta_key' => "Single",
-                  'meta_value' => "Primary",
+                  'posts_per_page' => 1, 
+                  'orderby' => 'rand',
+                  'post__not_in' => array(get_the_ID()),
                   ))?>
                 
-                <?php if($primary->have_posts()) : while ($primary->have_posts()) : $primary->the_post(); ?>
+                <?php if(have_posts()) : while (have_posts()) : the_post(); ?>
 
 
 
@@ -157,7 +171,7 @@
                 <p>
                   <?php the_content()?>
                 </p>
-                <a href="#">Continue Reading</a>
+                <a href="">Continue Reading</a>
               </div>
             </div>
 

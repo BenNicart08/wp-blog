@@ -583,8 +583,7 @@ img {
   font-size: 1.2rem;
   opacity: 0.2;
 }
-
-.card__banner__lg img {
+.article .card__banner__lg img {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
@@ -631,6 +630,7 @@ img {
 .card__single__col a {
   font-size: 1.4rem;
   font-weight: bold;
+  color: var(--clr-light);
 }
 .card__two__col {
   display: grid;
@@ -946,3 +946,7 @@ img {
   background-color: hsl(0, 0%, 11%);
   color: hsl(0, 0%, 100%);
 } /*# sourceMappingURL=main.min.css.map */
+
+.other__grid a {
+  color: #f2f2f2;
+}

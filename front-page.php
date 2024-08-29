@@ -24,7 +24,7 @@
                     <li class="article__date"><?php echo get_the_date('M j, Y');?></li>
                   </ul>
                   <p class="article__excerpt">
-                    <?php echo wp_trim_words(get_the_excerpt(), 15)?>
+                    <?php the_title()?>
                   </p>
                   <a href="<?php the_permalink()?>" class="article__more">Read More</a>
                 </div>
@@ -60,7 +60,7 @@
                       <h3>
                         <?php echo wp_trim_words(get_the_excerpt(), 7)?>
                       </h3>
-                      <a href="#">Read More</a>
+                      <a href="<?php the_permalink()?>">Read More</a>
                     </div>
                   </div>
                 </div>
@@ -103,11 +103,11 @@
                  <?php echo get_the_category()[0]->name?>
               </li>
             </ul>
-            <h3><?php the_title()?></h3>
+            <a href=""><h3><?php the_title()?></h3></a>
             <p>
               <?php echo wp_trim_words(get_the_excerpt(), 7)?>
             </p>
-            <a href="#">Read More</a>
+            <a href="<?php the_permalink()?>">Read More</a>
           </div>
           <?php endwhile;
                     else:
@@ -137,7 +137,7 @@
           <p>
             <?php echo wp_trim_words(get_the_excerpt(), 20)?>
           </p>
-          <a href="#">Read the full Story</a>
+          <a href="<?php the_permalink()?>">Read the full Story</a>
         </div>
         <div class="feature__img">
           <?php if(has_post_thumbnail()) {
@@ -184,7 +184,7 @@
                 <p>
                   <?php echo wp_trim_words(get_the_excerpt(), 25)?>
                 </p>
-                <a href="#">Read more</a>
+                <a href="<?php the_permalink()?>">Read more</a>
               </div>
             </div>
             <?php endwhile;
@@ -210,7 +210,7 @@
               <h3>
                 <?php the_title()?>
               </h3>
-              <a href="#">Read more</a>
+              <a href="<?php the_permalink()?>">Read more</a>
             </div>
             <?php endwhile;
                     else:
